@@ -24,4 +24,5 @@ RUN apt-get update && \
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D", "-e"]
+ENTRYPOINT ["/usr/sbin/sshd"]
+CMD ["-D", "-e"]
